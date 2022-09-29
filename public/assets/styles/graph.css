@@ -1,0 +1,11 @@
+canvas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    border: 2px solid rgb(183, 233, 117);
+    
+}
+

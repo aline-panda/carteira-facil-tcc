@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="icon" href="../image/title.png">
+    <title>Metas</title>
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../image/title.png" alt="">
+                <h2>Carteira fácil</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="dashboard.html"> Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullseye"></i>
+                        <a href="metas.html"> Metas</a>
+                    </li>
+                    <li>
+                        <a href="dashboardFaleConosco.html"> Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"> <i class="fa-solid fa-house"></i> Início</a>
+                <button onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </header>
+            <div class="main-content">
+              <div class="caracteristica">
+                <div class="titulo_caracteristica">
+                    <i class="fa-solid fa-dollar"></i>
+                    <h3>Valor Total | R$</h3>
+                    <input type="text" name="total_metas" id="total_metas" disabled value="0,00">
+                    <button id="salvar_metas" class="adicionar" onclick="addMetas();">
+                        <i class="fa-solid fa-save"></i>
+                    </button>
+                </div>
+                <div class="conteudo_caracteristica">
+                    <table>
+                        <thead id="thead_metas">
+                            <tr>
+                                <th></th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                                <th>Prazo</th>
+                                <th>Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela_metas">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="rodape_caracteristica">
+                    <button id="add_meta" class="adicionar" onclick="createRow(null);">
+                       <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <footer>
+                Copyright © 2022 | <a href="" target="_blank" style="text-decoration:none"> Aline Jardim da Silva </a>
+            </footer>
+        </main>
+    </div>
+    <script>
+        src = "../plugins/bootstrap/js/bootstrap.min.js"
+    </script>
+    <script>
+        scr = "../plugins/fontawesome/js/all.min.js"
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script type="module" src="../../config/firebase.js"></script>
+    <script src="../../config/authentication.js"></script>
+    <script src="../../config/index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            getMetas()
+        });
+    </script>
+</body>
+
+</html>

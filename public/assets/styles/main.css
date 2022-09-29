@@ -1,0 +1,83 @@
+main {
+    display: block;
+    height: 100%;
+    background-color: rgb(241, 237, 237);
+    width: calc(100% - 300px);
+}
+
+main .main-content {
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+}
+
+.main-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+.main-content .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.panel-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+
+.panel-50 {
+    width: 50%;
+}
+
+.panel-row button {
+    width: 100%;
+    font-size: 15px;
+    color: rgb(3, 3, 3);
+    background: rgb(152, 233, 141);
+}
+
+.panel-row button:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: calc(100% - 100px);
+    }
+    
+    .panel-row button {
+        width: 150px;
+        height: 10px;
+        font-size: 10px;
+        color: rgb(3, 3, 3);
+        background: rgb(160, 238, 150)
+    }
+    
+}
+
+
+

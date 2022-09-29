@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    height: 50px;
+    background: linear-gradient(135deg, rgb(253, 253, 253), rgb(183, 233, 117));
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../styles/all.css">
+     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+     <link rel="icon" href="../image/title.png">
+     <title>Dashboard</title>
+ </head>
+ <body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../image/title.png" alt="">
+                <h2>Security Analysis</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="dashboard.html"> Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullseye"></i>
+                        <a href="metas.html"> Metas</a>
+                    </li>
+                    <li>
+                        <a href="dashboardFaleConosco.html">  Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+         </sidebar>
+         <main>
+             <header>
+                <a href="dashboard.html"> <i class="fa-solid fa-house"></i> Início</a>
+                <button onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</button>   
+             </header>
+             <div class="main-content">
+                <div class="panel-row-faleConosco">
+
+                    <div>
+                        <h1 id="titulo">Fale conosco</h1>
+                        <br>
+                    </div>
+
+                    <form>
+                        
+                        <div class="form-group">
+                            <label for="txtNome">Nome</label>
+                            <br>
+                            <input type="text" id="txtNome" />
+                            <br>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail">E-mail</label>
+                            <br>
+                            <input type="text" id="txtEmail" />
+                            <br>
+                            <br>
+                        </div>
+                      
+                        <label class="txtComentario">Comentários</label>
+                        <br>
+                        <textarea rows="5"id="txtComentario"> </textarea>
+                        </form>
+
+                        <div class="form-group">
+                        <form>
+                        <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset"class="botao">Limpar<button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+            <footer>
+                Copyright © 2022 | <a href="" target="_blank" style="text-decoration:none">  Aline Jardim da Silva </a>
+            </footer>
+          </main>
+     </div>
+     <script>
+         src="../plugins/bootstrap/js/bootstrap.min.js"
+     </script>
+     <script>
+        scr="../plugins/fontawesome/js/all.min.js"
+     </script>
+     
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script type="module" src="../../config/firebase.js"></script>
+    <script src="../../config/authentication.js"></script>
+    <script src="../../config/index.js"></script>
+ </body>
+ </html>

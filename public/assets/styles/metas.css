@@ -1,0 +1,73 @@
+.caracteristica{
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0.3em green;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  min-width: 800px;
+  margin: auto;
+}
+
+.caracteristica .titulo_caracteristica{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.caracteristica .titulo_caracteristica h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.caracteristica .titulo_caracteristica input{
+  box-shadow: none;
+  width: 150px;
+  font-weight: 700;
+}
+
+.caracteristica tr th,
+.caracteristica tr td
+{
+  text-align: center;
+}
+
+.caracteristica #thead_metas{
+  visibility: hidden;
+}
+
+.caracteristica #tabela_custos input{
+  width: 250px;
+  font-weight: 700;
+}
+
+.caracteristica input{
+  padding: 5px;
+  box-shadow: 0 0 0.3em lightgreen;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.caracteristica button{
+  padding: 5px 15px;
+  box-shadow: 0 0 0.3em lightgreen;
+  color: #fff;
+  background: rgb(0, 128, 0);
+  opacity: .7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.caracteristica button:hover{
+  opacity: 1;
+}
+

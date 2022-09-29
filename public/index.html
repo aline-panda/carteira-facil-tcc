@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/styles/all.css">
+     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css">
+     <link rel="icon" href="./assets/image/title.png">
+     <title>Dashboard</title>
+ </head>
+
+ <body>
+     <div class="login">
+         <div class="login-form">
+             <div class="login-form-wrapper">
+                 <div class="login-title">
+                     <h2 class="log">Login</h2>
+                 </div>
+
+                 <div class="form-group">
+                     <label class="email" for="email">Email</label>
+                     <br>
+                     <input type="email" class="form-control" id="emailLogin" placeholder=" ">
+                 </div>
+                 <br>
+                 <div class="form-group">
+                     <label class="senha" for="senha">Senha</label>
+                     <br>
+                     <input type="password" class="form-control" id="senhaLogin" placeholder=" ">
+                 </div>
+                 <br>
+                 <br>
+                 <br>
+                 <button onclick="logar()" class="btn">Login</button>
+                 <br>
+                 <br>
+                 <a href="./assets/views/register.html">Cadastre-se</a>
+             </div>
+         </div>
+         <div class="banner-login">
+             <img src="./assets/image/title.png" alt="">
+             <h2> Carteira fácil </h2>
+         </div>
+     </div>
+     <script>
+         src = "./assets/plugins/bootstrap/js/bootstrap.min.js"
+     </script>
+     <script>
+         scr = "./assets/plugins/fontawesome/js/all.min.js"
+     </script>
+     <script>
+         let button = document.querySelector('form button.btn')
+         button.addEventListener("click", () => {
+             location.href = "./assets/views/dashboard.html"
+         })
+     </script>
+
+     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+     <script src="./config/firebase.js"></script>
+     <script src="./config/authentication.js"></script>
+     <script src="./config/index.js"></script>
+ </body>
+
+ </html>

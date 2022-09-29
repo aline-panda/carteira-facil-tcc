@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Fonte';
+    src: url('../fonte/Montserrat-VariableFont_wght.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Fonte';
+    src: url('../fonte/Montserrat-Italic-VariableFont_wght.ttf');
+    font-weight: 600;
+}
+

@@ -1,0 +1,33 @@
+.main-content .panel-row-faleConosco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#titulo{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+#txtNome {
+width: 400px;   
+}
+#txtEmail {
+width: 400px;
+}
+#txtComentario {
+width: 400px; 
+}
+
+
+
+
+
+
+
+
